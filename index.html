@@ -5,38 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Jaks Food</title>
     <link rel="stylesheet" href="./estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- links para JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Link para bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
+    <!-- encabezado de la pagina -->
+    <header class="header"> 
+        <div class="logo"> <!-- Caja para Logo principal -->
+            <img src="./imagenes/LOGO NEGRO PNG_Mesa de trabajo 1.png" alt="Logo de la Marca">
+        </div>
+        <!-- Barra de Navegacion -->
         <nav>
-            <ul>
-                <li><a href="#">inicio</a></li>
+            <ul class="nav-links"> <!--Lista de opciones a elegir para el usuario -->
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#">Categorias</a></li>
                 <li><a href="#">Delivery</a></li>
-                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <h1>Productos</h1>
-      <div id="contenedor">
-        <div class="caja"id="caja1"><img src="/Proyecto sprint 1/imagenes/tequenotradicional.jpg" width="250" height="200" alt="tradicional"></div>
-        <div class="caja"id="caja2"><img src="/Proyecto sprint 1/imagenes/minitequenos.jpg" width="250"  height="200" alt="minitequenos"></div>
-        <div class="caja"id="caja3"></div>
-        <div class="caja"id="caja4"></div>
-        <div class="caja"id="caja5"></div>
-        <div class="caja"id="caja6"></div>
-        <div class="caja"id="caja7"></div>
-        <div class="caja"id="caja8"></div>
-        <div class="caja"id="caja9"></div>
-        <div class="caja"id="caja10"></div>
-        <div class="caja"id="caja11"></div>
-        <div class="caja"id="caja12"></div>
-        <div id="video"><video src="./videos/VID_347730803_025254_690.mp4" width="500" height="350" controls></video></div>
-    </div>
-    <footer class="pie"></footer>
+        <a href="#" class="btn"><button>Contacto</button></a> <!-- Boton para redireccionar al cliente a contacto con la empresa-->
+    </header>
+
+    <h1>Productos</h1> 
+
+    <main id="contenedor"> <!-- cuerpo principal de la pagina -->
+        <div class="imagenes"> <!-- Caja para imagenes de productos -->
+            <img src="./imagenes/tequenotradicional.jpg" alt="imagen 1" class="imgu">
+            <img src="./imagenes/minitequenos.jpg" alt="imagen 2" class="imgu">
+            <img src="./imagenes/pastelito.jpg" alt="imagen 3" class="imgu">
+            <img src="./imagenes/congelados.jpg" alt="imagen 4" class="imgu">
+            <img src="./imagenes/mandoca.jpg" alt="imagen 5" class="imgu">
+            <img src="./imagenes/empanada.jpg" alt="imagen 6" class="imgu">
+            <img src="./imagenes/guayaba.jpg" alt="imagen 7" class="imgu">
+            <img src="./imagenes/cheddar.jpg" alt="imagen 8" class="imgu">
+            <img src="./imagenes/tequechoco.jpg" alt="imagen 9" class="imgu">
+            <img src="./imagenes/roquefort.jpg" alt="imagen 10" class="imgu">
+            <img src="./imagenes/tequeyoyo.jpg" alt="imagen 11" class="imgu">
+            <img src="./imagenes/tequemandoca.jpg" alt="imagen 12" class="imgu">
+        </div>
+    </main>
+
+    <footer class="pie"><!-- Pie de Pagina -->
+
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group"> <!-- prueba de checkbox Bootstrap -->
+            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+          </div>
+    </footer>
 </body>
 </html>
