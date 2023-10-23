@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(/imagenes/fondotequenos.jpg);
+    background-image: url(/imagenes/fondotequenos\(2\).jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -87,8 +87,8 @@ header{
 h1{
     text-align: center;
     font-size: 60px;
-    margin-top: 20px;
     color: white;
+    margin-top: 20px;
 }
 
 #contenedor{
