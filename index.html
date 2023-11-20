@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Link para bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4d88009a9.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- encabezado de la pagina -->
@@ -20,14 +21,15 @@
         <nav>
             <ul class="nav-links"> <!--Lista de opciones a elegir para el usuario -->
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Delivery</a></li>
+                <li><a href="./registro.html" target="_blank">Registro</a></li>
+                <li><a href="https://jaks-food.pedix.app/" target="_blank">Categorias</a></li>
+                <li><a href="https://jaks-food.pedix.app/" target="_blank">Delivery</a></li>
             </ul>
         </nav>
         <a href="#" class="btn"><button>Contacto</button></a> <!-- Boton para redireccionar al cliente a contacto con la empresa-->
     </header>
 
-    <h1>Productos</h1> 
+    <h1 class="encabezado">Productos</h1> 
 
     <main id="contenedor"> <!-- cuerpo principal de la pagina -->
         <div class="imagenes"> <!-- Caja para imagenes de productos -->
@@ -45,19 +47,38 @@
             <img src="./imagenes/tequemandoca.jpg" alt="imagen 12" class="imgu">
         </div>
     </main>
-
+    
     <footer class="pie"><!-- Pie de Pagina -->
+        <section id="cajasfooter">
+            <div class="caja1">
+            <a href="#">Contacto</a> <br>
+            <a href="#">¿Quienes somos?</a>
+            <br>
+            <p>Medios de pago</p>
+            <span>- Tarjeta de debito</span><br>
+            <span>- Mercadopago</span><br>
+            <span>- Criptomonedas</span>
+        </div>
+        <div class="caja2">
+            <section class="buttons"> <!-- Usamos un section para darle una clase y asi poder personalizar los iconos -->
+            <a href="https://www.facebook.com/jaksfood.ar?mibextid=2JQ9oc" target="_blank" class="fa-brands fa-facebook" style="color: #000000;"></a>
+            <a href="#+https://instagram.com/jaksfood.ar?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="fa-brands fa-instagram" style="color: #000000;"></a>
+            <a href="https://www.tiktok.com/@jaksfood.ar?_t=8hV8tp1xVzh&_r=1" target="_blank" class="fa-brands fa-tiktok" style="color: #000000;"></a>
+            <a href="https://maps.app.goo.gl/qukWuFMP4u2wFUYE8" target="_blank" class="fa-brands fa-google" style="color: #000000;"></a>
+            <a href="https://api.whatsapp.com/send/?phone=5491161255435&text&type=phone_number&app_absent=0" target="_blank" class="fa-brands fa-whatsapp" style="color: #000000;"></a>
+            </section>
+            <p>Siguenos</p>
+            <p>Ubicacion</p>
+            <span>Vera 436, Villa Crespo. CABA.</span>
+        </div>
+        <div class="caja3">
+            <a href="#">¿Quieres trabajar con nosotros?</a><br>
+            <a href="https://api.whatsapp.com/send/?phone=5491161255435&text&type=phone_number&app_absent=0" target="_blank">Ventas al mayor</a><br>
+            <a href="https://api.whatsapp.com/send/?phone=5491161255435&text&type=phone_number&app_absent=0" target="_blank">Franquicias</a>
 
-        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group"> <!-- prueba de checkbox Bootstrap -->
-            <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
-          
-            <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
-          
-            <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
-          </div>
+        </div>
+        <img src="./imagenes/LOGO NEGRO PNG_Mesa de trabajo 1.png" alt="logofooter">
+        </section>
     </footer>
 </body>
 </html>
